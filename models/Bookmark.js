@@ -13,7 +13,7 @@ const Bookmark = sequelize.define('bookmark', {
   location_id: {
     type: DataTypes.STRING,
     allowNull: false
-  },
+  }
 });
 
 module.exports = Bookmark;
