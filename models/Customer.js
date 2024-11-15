@@ -3,8 +3,7 @@ const sequelize = require('../config/database');
 
 const Customer = sequelize.define('customer', {
   customer_name: {
-    type: DataTypes.STRING,
-    allowNull: false
+    type: DataTypes.STRING
   },
   email: {
     type: DataTypes.STRING
