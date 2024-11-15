@@ -2,13 +2,6 @@ const { DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
 
 const Location = sequelize.define('location', {
-  customer_name: {
-    type: DataTypes.STRING,
-    allowNull: false
-  },
-  email: {
-    type: DataTypes.STRING
-  },
   state: {
     type: DataTypes.STRING
   },
@@ -16,9 +9,29 @@ const Location = sequelize.define('location', {
     type: DataTypes.STRING
   },
   street_address: {
-    type: DataTypes.STRING
+    type: DataTypes.STRING,
+    allowNull: false
   },
   zip_code: {
+    type: DataTypes.INTEGER
+  },
+  local_population: {
+    type: DataTypes.INTEGER
+  },
+  tourist_population: {
+    type: DataTypes.INTEGER
+  },
+  population_ratio: {
+    type: DataTypes.DOUBLE
+  },
+  link: {
+    type: DataTypes.STRING
+  },
+  bookmarks: {
+    type: DataTypes.INTEGER,
+    allowNull: false
+  },
+  rating: {
     type: DataTypes.INTEGER
   }
 });
