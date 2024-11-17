@@ -6,7 +6,7 @@ const Bookmark = sequelize.define('bookmark', {
     type: DataTypes.STRING,
     allowNull: false
   },
-  description: {
+  customer_id: {
     type: DataTypes.STRING,
     allowNull: false
   },

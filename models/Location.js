@@ -2,6 +2,9 @@ const { DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
 
 const Location = sequelize.define('location', {
+  location_id: {
+    type: DataTypes.STRING
+  },
   state: {
     type: DataTypes.STRING
   },
@@ -23,6 +26,9 @@ const Location = sequelize.define('location', {
   },
   population_ratio: {
     type: DataTypes.DOUBLE
+  },
+  description: {
+    type: DataTypes.STRING
   },
   link: {
     type: DataTypes.STRING
