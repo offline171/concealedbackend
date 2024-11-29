@@ -2,9 +2,6 @@ const { DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
 
 const Customer = sequelize.define('customer', {
-  customer_id: {
-    type: DataTypes.STRING
-  },
   customer_name: {
     type: DataTypes.STRING
   },
