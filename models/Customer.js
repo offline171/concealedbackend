@@ -2,23 +2,26 @@ const { DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
 
 const Customer = sequelize.define('customer', {
-  customer_name: {
+  firstName: {
+    type: DataTypes.STRING
+  },
+  lastName: {
     type: DataTypes.STRING
   },
   email: {
     type: DataTypes.STRING
   },
-  state: {
+  password: {
     type: DataTypes.STRING
   },
-  city: {
+  lastLogin: {
+    type: DataTypes.DATE
+  },
+  theme: {
     type: DataTypes.STRING
   },
-  street_address: {
-    type: DataTypes.STRING
-  },
-  zip_code: {
-    type: DataTypes.INTEGER
+  emailNotifications: {
+    type: DataTypes.BOOLEAN
   }
 });
 

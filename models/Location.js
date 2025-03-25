@@ -12,18 +12,6 @@ const Location = sequelize.define('location', {
     type: DataTypes.STRING,
     allowNull: false
   },
-  zip_code: {
-    type: DataTypes.INTEGER
-  },
-  local_population: {
-    type: DataTypes.INTEGER
-  },
-  tourist_population: {
-    type: DataTypes.INTEGER
-  },
-  population_ratio: {
-    type: DataTypes.DOUBLE
-  },
   description: {
     type: DataTypes.STRING
   },
