@@ -17,13 +17,11 @@ const Customer = sequelize.define('customer', {
   lastLogin: {
     type: DataTypes.DATE
   },
-  preferences: {
-    theme: {
-      type: DataTypes.STRING
-    },
-    emailNotifications: {
-      type: DataTypes.BOOLEAN
-    }
+  theme: {
+    type: DataTypes.STRING
+  },
+  emailNotifications: {
+    type: DataTypes.BOOLEAN
   }
 });
 
